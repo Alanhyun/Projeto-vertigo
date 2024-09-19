@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Titillium Web", sans-serif;
 }
+
 :root {
     --gray-800: #1E293B;
     --gray-600: #475569;
@@ -13,6 +14,7 @@
     --light-purple: #9F67FF;
     --white: #FFF;
 }
+
 header {
     background-image: url(./imagens/bg-mobile.png);
     background-size: cover;
@@ -22,21 +24,26 @@ header {
     align-items: center;
     margin-bottom: 3.7rem;
 }
+
 main {
     padding-inline: 1.5rem;
 }
+
 .descricao {
     margin-bottom: 2.5rem;
 }
+
 .descricao h1 {
     color: var(--gray-800);
     margin-bottom: 1rem;
     font-size: 1.5625rem;
 }
+
 .descricao p {
     font-size: 0.8125rem;
-    color: var(--gray-600); 
+    color: var(--gray-600);
 }
+
 .input-box {
     display: flex;
     flex-direction: column;
@@ -53,6 +60,7 @@ main {
     color: var(--gray-800);
     font-weight: 600;
 }
+
 .login input {
     padding: 1rem 0.75rem;
     border: 1px solid var(--gray-200);
@@ -68,6 +76,7 @@ main {
 .login input:focus {
     outline: 1px solid var(--purple);
 }
+
 .login a {
     color: var(--purple);
     text-decoration: none;
@@ -78,6 +87,7 @@ main {
 .login a:hover {
     text-decoration: underline;
 }
+
 .login button {
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -86,16 +96,17 @@ main {
     background: var(--purple);
     border: none;
     border-radius: 0.25rem;
-
     font-size: 1rem;
     font-weight: 700;
     color: var(--white);
 }
-.login button:hover{
+
+.login button:hover {
     background: var(--light-purple);
     transition: 0.3s;
     cursor: pointer;
 }
+
 .login > p {
     color: var(--gray-600);
 }
@@ -104,16 +115,21 @@ main {
     font-weight: 700;
     font-size: 1rem;
 }
-@media(min-width: 1000px) {
+
+.bg-desktop {
+    display: none; 
+}
+
+@media (min-width: 1000px) {
     body {
         display: flex;
+        height: 100vh;
     }
 
     header {
         background: none;
         justify-content: flex-start;
         margin: 2.5rem 7rem 7rem;
-
         height: fit-content;
     }
 
@@ -126,7 +142,7 @@ main {
         max-width: 24rem;
         padding: 0;
     }
-    
+
     .conteudo {
         width: 100%;
         display: flex;
@@ -135,9 +151,15 @@ main {
     }
 
     .bg-desktop {
-        display: block;
-        width: 100%;
+        display: block; 
     }
+
+    .bg-desktop img {
+        display: block; 
+        height: auto;  
+        max-width: none; 
+    }
+
     .descricao h1 {
         font-size: 2.25rem;
     }
